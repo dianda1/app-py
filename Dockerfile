@@ -27,7 +27,7 @@
 # /home/charles/Desktop/docker-compose/composetest/Dockerfile
 
 #FROM gcr.io/distroless/python3
-FROM python:3.7-alpine as builder
+FROM python:3.7-alpine AS builder
 LABEL Manitainer="Charles" Application-name="E-comm Website"
 WORKDIR /code
 RUN apk add --no-cache gcc musl-dev linux-headers
